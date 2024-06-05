@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+         <link rel="stylesheet" href="styles.css">
+         <meta charset="UTF-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <title>Ani-world</title>
+    </head>
+    <body>
+         <h1 style="color: rgb(27, 24, 24);background-color:rgb(207, 200, 238);font-style:Aerial">Watch popular anime wallpaper</h1>
+         
+            <button id="MagicButton">Background-Color</button>
+          
+         
+         <script src="script.js"></script>
+
+         <img src="blackclover.jpg" alt="Black clover" width="950px">
+
+         <p style="color:#4e4b4b ;background-color:rgb(189, 223, 234);font-style:oblique">Black Clover is an anime series that follows Asta, a young boy who was born without any magic power in a world where everyone is given the ability to use magic. 
+            Despite his lack of magic, Asta is determined to become the Wizard King, the most powerful mage in the kingdom.
+            With the help of his friends and fellow mages, Asta must overcome many challenges in order to achieve his dream.
+            The series is set in the Clover Kingdom, a world where magic is everything.
+            Asta and his friends are members of the Black Bulls, a squad of mages who are considered to be the weakest in the kingdom. 
+            However, the Black Bulls are also a close-knit group of friends who are always there for each other.
+            Black Clover is a story about friendship, perseverance, and the power of believing in yourself. It is a series that will appeal to fans of action, adventure, and fantasy..
+          </p>
+          
+           <!--I am using web3forms api for sendind the submitted detail of form to my Email-->
+          <form id="registrationForm" onsubmit="return validateForm()" action="https://api.web3forms.com/submit" method="POST">
+               <header>MESSAGE ME</header>
+               <input type="hidden" name="access_key" value="789787d5-82e5-4c13-8477-7a34176cf392">
+               <div class="form-group">
+                 <label for="firstName">First Name:</label>
+                 <input type="text" id="firstName" name="firstName" required maxlength="45">
+                 <span class="error" id="firstNameError"></span>
+             
+                 <label for="lastName">Last Name:</label>
+                 <input type="text" id="lastName" name="lastName" required maxlength="45">
+                 <span class="error" id="lastNameError"></span>
+             
+                 <label for="email">Email:</label>
+                 <input type="email" id="email" name="email" required>
+                 <span class="error" id="emailError"></span>
+             
+                 <label for="message">Message:</label>
+                 <textarea id="message" name="message" required minlength="10" maxlength="100"></textarea>
+                 <span class="error" id="messageError"></span>
+               </div>
+              <button type="submit">Submit</button>
+          </form> 
+          <div id="data-container"></div>
+     </body>
+</html>
